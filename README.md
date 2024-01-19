@@ -8,3 +8,4 @@ Este proyecto es una aplicación simple de control de citas desarrollada con Rea
 - **Eliminar citas:** Posibilidad de eliminar citas existentes.
 - **Actualizar citas:** Permite actualizar la información de las citas existentes.
 - **Almacenamiento local:** Utiliza el Local Storage para persistir los datos localmente.
+- **Diseño Responsive:** El sitio se adapta de manera fluida a una variedad de dispositivos, desde dispositivos móviles y tabletas hasta pantallas de escritorio. .
