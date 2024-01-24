@@ -1,4 +1,4 @@
-export const Patient = () => {
+const Patient = () => {
 	return (
 		<>
 			<div className="list_patient">
@@ -79,3 +79,5 @@ export const Patient = () => {
 		</>
 	);
 };
+
+export default Patient;
