@@ -158,6 +158,21 @@ header {
     gap: 10rem;
 }
 
+.error_msj {
+    display: block;
+    background: var(--accent-100);
+    text-align: center;
+    font-weight: var(--font-900);
+    text-transform: uppercase;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+    padding: .6rem;
+}
+
+.error_msj p {
+    font-size: 1.5rem;
+}
+
 /* LISTADO DE PACIENTES ======================== */
 .list_patient {
     margin-bottom: 1.4rem;
