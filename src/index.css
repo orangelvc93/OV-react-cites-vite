@@ -1,3 +1,231 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700;900&display=swap');
+
+:root {
+    /* COLORES =================================== */
+    --primary-100: #0D6E6E;
+    --primary-200: #37afad;
+    --primary-300: #afffff;
+    --accent-100: #FF3D3D;
+    --accent-200: #ffe0c8;
+    --text-100: #FFFFFF;
+    --text-200: #e0e0e0;
+    --text-300: #777777;
+    --bg-100: #0D1F2D;
+    --bg-200: #1d2e3d;
+    --bg-300: #354656;
+
+    /* TIPOGRAFÍA ============================== */
+    --font-family: 'Roboto Slab', serif;
+    --font-300: 300;
+    --font-400: 400;
+    --font-700: 700;
+    --font-900: 900;
+
+    --size-title: 30rem;
+    --size-subtitle: 20rem;
+    --size-paragraph: 15rem;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: var(--font-family);
+    background: var(--bg-100);
+    color: var(--text-100);
+}
+
+h1 {
+    font-weight: var(--font-900);
+}
+
+h2 {
+    font-weight: var(--font-700);
+}
+
+p {
+    font-size: 2rem;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2rem;
+}
+
+/* HEADER ========================== */
+header {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.span {
+    color: var(--primary-200);
+}
+
+/* FORM ============================ */
+.title {
+    text-align: center;
+}
+
+.sub_title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form, .list_patient {
+    background: var(--bg-300);
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+}
+
+.form_label {
+    display: block;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    font-weight: var(--font-700);
+    color: var(--text-200);
+}
+
+.form_input {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    font-size: 1.7rem;
+    color: var(--text-300);
+    margin-bottom: 2rem;
+}
+
+.form_input:hover {
+    background: var(--text-200);
+}
+
+.form_input:focus {
+    background: var(--text-200);
+}
+
+.btn_1 {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: var(--font-700);
+    color: var(--text-100);
+    margin-top: 4rem;
+    background: var(--primary-200);
+    cursor: pointer;
+    transition: all.3s ease;
+}
+
+.btn_2 {
+    background: var(--accent-100);
+}
+
+.btn_1:hover {
+    background: var(--primary-100);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+}
+
+/* LISTADO DE PACIENTES ======================== */
+.list_patient {
+    margin-bottom: 1.4rem;
+}
+
+.scroll {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    height: 59rem;
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.list_title {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-200);
+    margin-bottom: .5rem;
+    font-size: 1.6rem;
+}
+
+.list_text {
+    font-weight: 300;
+    text-transform: none;
+    color: var(--text-200);
+}
+
+/* FOOTER =========================0 */
+.footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* RESPONSIVE MOVIL =================== */
+@media (max-width: 720px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    main {
+        display: block;
+    }
+
+    .title {
+        margin-top: 3rem;
+    }
+
+    .btn_1 {
+        font-size: 1.5rem;
+        margin: 1rem 0 0rem 0;
+
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .scroll {
+        overflow: hidden;
+        height: auto;
+    }
+}

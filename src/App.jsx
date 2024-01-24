@@ -1,7 +1,17 @@
+import Footer from "./components/Footer";
+import Form from "./components/Form";
+import Header from "./components/Header";
+import PatientList from "./components/patientList";
+
 function App() {
 	return (
-		<div className="bg-slate-600">
-			<h1 className="text-red-600">Hola mundo</h1>
+		<div className="container">
+			<Header />
+			<main>
+				<Form />
+				<PatientList />
+			</main>
+			<Footer />
 		</div>
 	);
 }
